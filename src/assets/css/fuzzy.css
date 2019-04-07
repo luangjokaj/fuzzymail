@@ -3,7 +3,9 @@ body {
 }
 
 table {
+	background: var(--color-light);
 	color: var(--color-gray-medium);
+	width: 100%;
 }
 
 .layout {
