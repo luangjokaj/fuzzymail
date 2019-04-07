@@ -1,3 +1,4 @@
+
 /* -------------------------------------------------------------------------------------------------
 
 Build Configuration
@@ -190,7 +191,7 @@ Utility Tasks
 -------------------------------------------------------------------------------------------------- */
 const onError = err => {
 	gutil.beep();
-	gutil.log(staticBuild + ' - ' + errorMsg + ' ' + err.toString());
+	gutil.log(fuzzyMail + ' - ' + errorMsg + ' ' + err.toString());
 	this.emit('end');
 };
 
@@ -203,9 +204,9 @@ const filesGenerated =
 	__dirname +
 	'/dist/ ✅';
 
-const staticBuild = '\x1b[42m\x1b[1mStaticWebBuild\x1b[0m';
-const staticBuildUrl = '\x1b[2m - https://staticbuild.website/\x1b[0m';
-const thankYou = 'Thank you for using ' + staticBuild + staticBuildUrl;
+const fuzzyMail = '\x1b[42m\x1b[1mStaticWebBuild\x1b[0m';
+const fuzzyMailUrl = '\x1b[2m - https://www.fuzzymail.co/\x1b[0m';
+const thankYou = 'Thank you for using ' + fuzzyMail + fuzzyMailUrl;
 
 /* -------------------------------------------------------------------------------------------------
 End of all Tasks

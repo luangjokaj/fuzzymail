@@ -4,22 +4,28 @@ body {
 
 .layout {
 	max-width: 640px;
-	margin: 20px auto;
+	margin: 20px;
 	background: var(--color-light);
+
+	@media (--screen-md) {
+		margin: 20px auto;
+	}
 }
 
 .header {
 	background: var(--color-primary);
 	color: var(--color-light);
-	padding: 20px;
 }
 
 .footer {
 	color: var(--color-gray-medium);
-	padding: 0 20px 20px;
 }
 
 .content {
 	color: var(--color-dark);
-	padding: 0 20px;
+}
+
+.spacing-10 {
+	font-size: 10px;
+	line-height: 10px;
 }
