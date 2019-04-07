@@ -4,11 +4,13 @@ body {
 
 .layout {
 	max-width: 640px;
-	margin: 20px;
+	margin: 20px auto;
 	background: var(--color-light);
+}
 
-	@media (--screen-md) {
-		margin: 20px auto;
+@media all and (max-width: 680px) {
+	.layout {
+		margin: 20px !important;
 	}
 }
 

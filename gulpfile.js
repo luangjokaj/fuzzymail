@@ -158,7 +158,11 @@ function staticFilesProd() {
 
 function inlineStyles() {
 	return src('./dist/*.html')
-		.pipe(inlineCss())
+		.pipe(inlineCss({
+			applyStyleTags: true,
+			removeStyleTags: false,
+			removeLinkTags: false
+		}))
 		.pipe(dest('./dist'));
 	}
 

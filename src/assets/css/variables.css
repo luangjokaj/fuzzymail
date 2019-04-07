@@ -1,20 +1,4 @@
-@custom-media --screen-xs (min-width: 0);
-@custom-media --screen-sm (min-width: 576px);
-@custom-media --screen-md (min-width: 768px);
-@custom-media --screen-lg (min-width: 992px);
-@custom-media --screen-xl (min-width: 1200px);
-@custom-media --screen-xxl (min-width: 1440px);
-@custom-media --screen-xxxl (min-width: 1920px);
-
 :root {
-
-	/* Spacing ----------------------------------------------- */
-	--padding-top-body-mobile: 70px;
-	--padding-top-body-desktop: 0;
-	--gutter-col-mobile: 10px;
-	--gutter-col-desktop: 10px;
-	--margin-container-mobile: 20px;
-	--margin-container-desktop: 20px;
 
 	/* Colors ----------------------------------------------------- */
 	--color-primary: #1F2D3D;
@@ -98,7 +82,6 @@
 	--lineheight-mobile-subtitle: 1.35;
 	--size-desktop-subtitle: 20px;
 	--lineheight-desktop-subtitle: 1.15;
-	
 
 	/* --> Lead --------------------------------------------------- */
 	--size-mobile-lead: 16px;
