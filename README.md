@@ -1,7 +1,7 @@
 # FuzzyMail
 Making emails fun again ✌
 
-![Preview](https://i.imgur.com/F4jTHm9.png)
+![Preview](https://i.imgur.com/j0G92zI.png)
 
 ---
 
