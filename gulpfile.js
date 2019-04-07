@@ -62,7 +62,7 @@ Development Tasks
 -------------------------------------------------------------------------------------------------- */
 function devServer() {
 	browserSync.init({
-			logPrefix: 'Email Build',
+			logPrefix: 'FuzzyMail',
 			server: {
 			baseDir: './build',
 		},
