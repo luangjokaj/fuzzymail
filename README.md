@@ -11,7 +11,7 @@ Supporting old email clients it's a real pain. I wanted to create something whic
 ---
 
 **Solution:**
-**FuzzyMail** - a simple tool to automatise the development process for creating email templates. Supporting old email clients maintaining responsiveness.
+**FuzzyMail** - is a simple tool to automate the development process for creating email templates. Supporting old email clients while maintaining responsiveness. Fuzzymail is supported on over 60+ email clients.
 
 # Documentation
 TBD

@@ -8,6 +8,10 @@ table {
 	width: 100%;
 }
 
+.black {
+	color: var(--color-dark);
+}
+
 .layout {
 	max-width: 640px;
 	margin: 20px auto;
@@ -41,6 +45,7 @@ table {
 
 .single {
 	& td {
+
 		padding: 20px;
 	}
 }
@@ -69,4 +74,24 @@ table {
 	.item {
 		padding: 20px !important;
 	}
+}
+
+.logo-wrapper {
+	& td {
+		padding-top: 20px;
+	}
+}
+
+.logo {
+	max-width: 77px;
+	max-height: 77px;
+	width: 100%;
+	height: 100%;
+}
+
+.social-icon {
+	max-width: 32px;
+	max-height: 32px;
+	width: 100%;
+	height: 100%;
 }

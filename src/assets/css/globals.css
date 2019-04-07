@@ -75,43 +75,12 @@ b {
 	color: var(--color-primary);
 }
 
-small {
-	@mixin small;
-}
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-	@mixin heading;
-}
-
-h1 {
-	@mixin h1;
-}
-
-h2 {
-	@mixin h2;
-}
-
-h3 {
-	@mixin h3;
-}
-
-h4 {
-	@mixin h4;
-}
-
-h5 {
-	@mixin h5;
-}
-
-h6 {
-	@mixin h6;
-}
-
-p {
-	@mixin paragraph;
+	margin: 0;
+	padding: 0;
 }
