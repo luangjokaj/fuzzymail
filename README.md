@@ -1,6 +1,8 @@
 # FuzzyMail
 Making emails fun again ✌
 
+![Preview](https://i.imgur.com/F4jTHm9.png)
+
 ---
 
 **Problem:**
