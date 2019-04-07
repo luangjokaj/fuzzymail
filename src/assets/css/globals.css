@@ -1,0 +1,117 @@
+@import './variables.css';
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+	font-size-adjust: none;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
+	font-family: var(--font-text);
+	font-size: var(--size-mobile-text);
+	line-height: var(--lineheight-mobile-text);
+}
+
+* {
+	box-sizing: border-box;
+
+	&::selection {
+		background: var(--color-dark);
+		color: var(--color-light);
+	}
+}
+
+a,
+button {
+	outline: none;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+a {
+	color: var(--color-primary);
+
+	&:hover {
+		color: var(--color-secondary);
+	}
+}
+
+figure {
+	margin: 0;
+}
+
+hr {
+	border: none;
+	border-bottom: solid 1px var(--color-gray-light);
+}
+
+fieldset {
+	appearance: none;
+	border: none;
+}
+
+img,
+svg {
+	transition: all 0.3s ease;
+
+	& * {
+		transition: all 0.3s ease;
+	}
+}
+
+img {
+	max-width: 100%;
+	width: 100%;
+}
+
+strong,
+b {
+	font-weight: 700;
+	color: var(--color-primary);
+}
+
+small {
+	@mixin small;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@mixin heading;
+}
+
+h1 {
+	@mixin h1;
+}
+
+h2 {
+	@mixin h2;
+}
+
+h3 {
+	@mixin h3;
+}
+
+h4 {
+	@mixin h4;
+}
+
+h5 {
+	@mixin h5;
+}
+
+h6 {
+	@mixin h6;
+}
+
+p {
+	@mixin paragraph;
+}
