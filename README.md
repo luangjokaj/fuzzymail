@@ -14,6 +14,11 @@ Supporting old email clients it's a real pain. I wanted to create something that
 **FuzzyMail** - is a simple tool to automate the development process for creating email templates. Supporting old email clients while maintaining responsiveness. Fuzzymail is supported on over 60+ email clients.
 
 ---
+# Features
+- Dev server with live reload
+- PostCSS with `postcss-preset-env`
+- Reusable chunks for HTML templating
+- Inline CSS on distribution files
 
 # Documentation
 ### Installation
