@@ -6,6 +6,10 @@ table {
 	background: var(--color-light);
 	color: var(--color-gray-medium);
 	width: 100%;
+
+	& tr {
+		width: 100%;
+	}
 }
 
 .black {
@@ -84,10 +88,6 @@ table {
 	max-height: 32px;
 	width: 32px;
 	height: 32px;
-}
-
-.text {
-	font-family: var(--font-text);
 }
 
 img {
