@@ -86,6 +86,13 @@ table {
 	height: 32px;
 }
 
+img {
+	margin: 0;
+	padding: 0;
+	border: none;
+	display: block;
+}
+
 // Mobile styles require !important in order to override the production inlined styles
 
 @media all and (max-width: 680px) {
@@ -101,4 +108,8 @@ table {
 	.item {
 		padding: 20px !important;
 	}
+}
+
+.text {
+	font-family: var(--font-text);
 }
