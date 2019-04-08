@@ -61,21 +61,6 @@ table {
 	line-height: 10px;
 }
 
-@media all and (max-width: 680px) {
-	.layout {
-		margin: 20px !important;
-	}
-
-	img {
-		width: auto !important;
-		height: auto !important;
-	}
-
-	.item {
-		padding: 20px !important;
-	}
-}
-
 .logo-wrapper {
 	& td {
 		padding-top: 20px;
@@ -94,4 +79,21 @@ table {
 	max-height: 32px;
 	width: 100%;
 	height: 100%;
+}
+
+// Mobile styles require !important in order to override the production inlined styles
+
+@media all and (max-width: 680px) {
+	img {
+		width: auto !important;
+		height: auto !important;
+	}
+
+	.layout {
+		margin: 20px !important;
+	}
+
+	.item {
+		padding: 20px !important;
+	}
 }
