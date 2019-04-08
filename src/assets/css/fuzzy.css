@@ -6,6 +6,10 @@ table {
 	background: var(--color-light);
 	color: var(--color-gray-medium);
 	width: 100%;
+
+	& tr {
+		width: 100%;
+	}
 }
 
 .black {
