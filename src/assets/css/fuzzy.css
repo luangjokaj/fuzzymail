@@ -1,15 +1,12 @@
-body {
+body,
+.bg {
 	background: var(--color-gray-light);
 }
 
-table {
+.wrapper {
 	background: var(--color-light);
-	color: var(--color-gray-medium);
-	width: 100%;
-
-	& tr {
-		width: 100%;
-	}
+	max-width: 600px;
+	width: 600px;
 }
 
 .black {
@@ -17,7 +14,7 @@ table {
 }
 
 .layout {
-	max-width: 640px;
+	max-width: 600px;
 	margin: auto;
 	background: var(--color-light);
 }
@@ -29,7 +26,7 @@ table {
 		padding: 20px 20px 0;
 
 		& img {
-			width: 100%;
+			width: 600px;
 			height: auto;
 		}
 	}
@@ -37,15 +34,11 @@ table {
 
 .footer {
 	color: var(--color-gray-medium);
+	background: var(--color-tertiary);
 
 	& td {
-		background: color-mod(var(--color-gray-light) alpha(30%));
 		padding: 20px;
 	}
-}
-
-.content {
-	color: var(--color-dark);
 }
 
 .item {
@@ -97,11 +90,15 @@ img {
 	display: block;
 }
 
+table {
+	background: var(--color-light);
+	color: var(--color-gray-medium);
+	max-width: 600px;
+}
+
 .desktopOff {
 	display: none;
 }
-
-// Mobile styles require !important in order to override the production inlined styles
 
 @media all and (max-width: 680px) {
 	img {
@@ -109,11 +106,11 @@ img {
 		height: auto !important;
 	}
 
-	.layout {
-		margin: 20px !important;
-	}
-
 	.item {
 		padding: 20px !important;
+	}
+
+	table {
+		width: 100% !important;
 	}
 }
