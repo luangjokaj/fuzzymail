@@ -86,10 +86,6 @@ table {
 	height: 32px;
 }
 
-.text {
-	font-family: var(--font-text);
-}
-
 img {
 	margin: 0;
 	padding: 0;
