@@ -4,10 +4,8 @@
 	"description": "",
 	"main": "gulpfile.js",
 	"scripts": {
-		"start": "npm run prod && node server.js",
 		"dev": "gulp dev",
-		"prod": "gulp prod",
-		"lint:css": "stylelint ./src/**/*.css --config ./tools/stylelintrc.json"
+		"prod": "gulp prod"
 	},
 	"author": "Luan Gjokaj",
 	"license": "MIT",
