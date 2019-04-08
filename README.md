@@ -1,7 +1,7 @@
 # FuzzyMail [![Dependencies](https://david-dm.org/luangjokaj/fuzzymail/status.svg)](https://david-dm.org/luangjokaj/fuzzymail)
 Making emails fun again ✌
 
-![Preview](https://i.imgur.com/VuKitHE.png)
+[![Preview](https://i.imgur.com/VuKitHE.png)](https://www.fuzzymail.co/)
 
 ---
 
