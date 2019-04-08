@@ -86,11 +86,19 @@ table {
 	height: 32px;
 }
 
+.text {
+	font-family: var(--font-text);
+}
+
 img {
 	margin: 0;
 	padding: 0;
 	border: none;
 	display: block;
+}
+
+.desktopOff {
+	display: none;
 }
 
 // Mobile styles require !important in order to override the production inlined styles
@@ -108,8 +116,4 @@ img {
 	.item {
 		padding: 20px !important;
 	}
-}
-
-.text {
-	font-family: var(--font-text);
 }
