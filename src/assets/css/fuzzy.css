@@ -13,6 +13,10 @@ body,
 	color: var(--color-dark);
 }
 
+.gray {
+	color: var(--color-gray-medium);
+}
+
 .layout {
 	max-width: 600px;
 	margin: auto;
@@ -92,7 +96,6 @@ img {
 
 table {
 	background: var(--color-light);
-	color: var(--color-gray-medium);
 	max-width: 600px;
 }
 
