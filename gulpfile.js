@@ -208,7 +208,7 @@ const filesGenerated =
 	__dirname +
 	'/dist/ ✅';
 
-const fuzzyMail = '\x1b[42m\x1b[1mStaticWebBuild\x1b[0m';
+const fuzzyMail = '\x1b[42m\x1b[1mFuzzyMail\x1b[0m';
 const fuzzyMailUrl = '\x1b[2m - https://www.fuzzymail.co/\x1b[0m';
 const thankYou = 'Thank you for using ' + fuzzyMail + fuzzyMailUrl;
 
