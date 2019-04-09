@@ -68,15 +68,11 @@ body,
 }
 
 .logo {
-	max-width: 77px;
-	max-height: 77px;
-	width: 100%;
-	height: 100%;
+	width: 77px;
+	height: 77px;
 }
 
 .social-icon {
-	max-width: 32px;
-	max-height: 32px;
 	width: 32px;
 	height: 32px;
 }
