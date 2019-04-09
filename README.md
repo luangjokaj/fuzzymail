@@ -2,7 +2,7 @@
 Making emails fun again ✌
 
 [![Preview](https://i.imgur.com/VuKitHE.png)](https://www.fuzzymail.co/)
-Demo Screenshots: [Modern Client](https://i.imgur.com/ETp8PaX.png) • [Gmail](https://i.imgur.com/kSH90xr.png) • [Outlook](https://i.imgur.com/54nsOvO.png) • [Mobile](https://i.imgur.com/YJgdCJg.png)
+Demo Screenshots: [Modern Client](https://i.imgur.com/ETp8PaX.png) • [Gmail](https://i.imgur.com/kSH90xr.png) • [Outlook](https://i.imgur.com/Wi75S1q.png) • [Mobile](https://i.imgur.com/YJgdCJg.png)
 
 ---
 
