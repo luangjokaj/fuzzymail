@@ -12,8 +12,8 @@ body {
 	-webkit-text-size-adjust: none;
 	-webkit-font-smoothing: antialiased;
 	font-family: var(--font-text);
-	font-size: var(--size-mobile-text);
-	line-height: var(--lineheight-mobile-text);
+	font-size: var(--size-text);
+	line-height: var(--lineheight-text);
 }
 
 * {

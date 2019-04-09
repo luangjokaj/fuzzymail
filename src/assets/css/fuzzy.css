@@ -3,12 +3,6 @@ body,
 	background: var(--color-gray-light);
 }
 
-.wrapper {
-	background: var(--color-light);
-	max-width: 600px;
-	width: 600px;
-}
-
 .black {
 	color: var(--color-dark);
 }
@@ -62,7 +56,7 @@ body,
 	}
 }
 
-.spacing-20 {
+.spacing-10 {
 	font-size: 10px;
 	line-height: 10px;
 }
