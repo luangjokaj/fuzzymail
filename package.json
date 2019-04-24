@@ -10,7 +10,7 @@
 	"author": "Luan Gjokaj",
 	"license": "MIT",
 	"dependencies": {
-		"browser-sync": "^2.26.3",
+		"browser-sync": "^2.26.4",
 		"connect-modrewrite": "^0.10.2",
 		"cssnano": "^4.1.10",
 		"del": "^4.1.0",
