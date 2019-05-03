@@ -94,11 +94,6 @@ table {
 }
 
 @media all and (max-width: 680px) {
-	img {
-		width: auto !important;
-		height: auto !important;
-	}
-
 	.item {
 		padding: 20px !important;
 	}
