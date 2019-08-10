@@ -1,7 +1,7 @@
 # FuzzyMail [![Dependencies](https://david-dm.org/luangjokaj/fuzzymail/status.svg)](https://david-dm.org/luangjokaj/fuzzymail)
 Making emails fun again ✌
 
-[![Preview](https://i.imgur.com/VuKitHE.png)](https://www.fuzzymail.co/)
+[![Preview](https://i.imgur.com/VuKitHE.png)](https://www.fuzzymail.co/) [![Greenkeeper badge](https://badges.greenkeeper.io/luangjokaj/fuzzymail.svg)](https://greenkeeper.io/)
 Demo Screenshots: [Modern Client](https://i.imgur.com/ETp8PaX.png) • [Gmail](https://i.imgur.com/kSH90xr.png) • [Outlook](https://i.imgur.com/Wi75S1q.png) • [Mobile](https://i.imgur.com/YJgdCJg.png)
 
 ---
