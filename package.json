@@ -1,13 +1,15 @@
 {
 	"name": "fuzzymail",
 	"version": "1.0.0",
-	"description": "",
+	"description": "Making emails fun again.",
+	"homepage": "https://www.fuzzymail.co",
+	"repository": "https://github.com/luangjokaj/fuzzymail",
 	"main": "gulpfile.js",
 	"scripts": {
 		"dev": "gulp dev",
 		"prod": "gulp prod"
 	},
-	"author": "Luan Gjokaj",
+	"author": "Luan Gjokaj <luan@riangle.com>",
 	"license": "MIT",
 	"dependencies": {
 		"browser-sync": "^2.26.7",
