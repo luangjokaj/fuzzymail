@@ -1,4 +1,3 @@
-
 /* -------------------------------------------------------------------------------------------------
 
 Build Configuration
@@ -62,8 +61,8 @@ Development Tasks
 -------------------------------------------------------------------------------------------------- */
 function devServer() {
 	browserSync.init({
-			logPrefix: 'FuzzyMail',
-			server: {
+		logPrefix: '📨 FuzzyMail',
+		server: {
 			baseDir: './build',
 		},
 		middleware: [modRewrite(['^.([^\\.]+)$ /$1.html [L]'])],
@@ -72,7 +71,7 @@ function devServer() {
 	watch('./src/assets/css/**/*.css', stylesDev);
 	watch('./src/assets/img/**', series(copyImagesDev, Reload));
 	watch('./src/**/*.html', series(staticFilesDev, Reload));
-};
+}
 
 function Reload(done) {
 	browserSync.reload();
@@ -80,9 +79,7 @@ function Reload(done) {
 }
 
 function copyImagesDev() {
-	return src('./src/assets/img/**').pipe(
-		dest('./build/assets/img'),
-	);
+	return src('./src/assets/img/**').pipe(dest('./build/assets/img'));
 }
 
 function stylesDev() {
@@ -109,12 +106,7 @@ function staticFilesDev() {
 		.pipe(dest('./build'));
 }
 
-exports.dev = series(
-	copyImagesDev,
-	stylesDev,
-	staticFilesDev,
-	devServer,
-);
+exports.dev = series(copyImagesDev, stylesDev, staticFilesDev, devServer);
 
 /* -------------------------------------------------------------------------------------------------
 Production Tasks
@@ -124,9 +116,7 @@ async function cleanProd() {
 }
 
 function copyFontsProd() {
-	return src('./src/assets/fonts/**').pipe(
-		dest('./dist/assets/fonts'),
-	);
+	return src('./src/assets/fonts/**').pipe(dest('./dist/assets/fonts'));
 }
 
 function stylesProd() {
@@ -158,13 +148,15 @@ function staticFilesProd() {
 
 function inlineStyles() {
 	return src('./dist/*.html')
-		.pipe(inlineCss({
-			applyStyleTags: true,
-			removeStyleTags: false,
-			removeLinkTags: false
-		}))
+		.pipe(
+			inlineCss({
+				applyStyleTags: true,
+				removeStyleTags: false,
+				removeLinkTags: false,
+			}),
+		)
 		.pipe(dest('./dist'));
-	}
+}
 
 function processImages() {
 	return src(['./src/assets/img/**', '!./src/assets/img/**/*.ico'])
@@ -182,13 +174,7 @@ function processImages() {
 		});
 }
 
-exports.prod = series(
-	cleanProd,
-	stylesProd,
-	staticFilesProd,
-	processImages,
-	inlineStyles
-);
+exports.prod = series(cleanProd, stylesProd, staticFilesProd, processImages, inlineStyles);
 
 /* -------------------------------------------------------------------------------------------------
 Utility Tasks
@@ -203,12 +189,9 @@ const onError = err => {
 Messages
 -------------------------------------------------------------------------------------------------- */
 const errorMsg = '\x1b[41mError\x1b[0m';
-const filesGenerated =
-	'Your production file are generated in: \x1b[1m' +
-	__dirname +
-	'/dist/ ✅';
+const filesGenerated = 'Your production file are generated in: \x1b[1m' + __dirname + '/dist/ ✅';
 
-const fuzzyMail = '\x1b[42m\x1b[1mFuzzyMail\x1b[0m';
+const fuzzyMail = '\x1b[42m\x1b[1m📨 FuzzyMail\x1b[0m';
 const fuzzyMailUrl = '\x1b[2m - https://www.fuzzymail.co/\x1b[0m';
 const thankYou = 'Thank you for using ' + fuzzyMail + fuzzyMailUrl;
 
