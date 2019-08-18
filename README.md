@@ -1,5 +1,7 @@
-# FuzzyMail [![Dependencies](https://david-dm.org/luangjokaj/fuzzymail/status.svg)](https://david-dm.org/luangjokaj/fuzzymail)
-Making emails fun again ✌
+# [![GoPablo](src/assets/img/logo.svg)](https://www.fuzzymail.co/)
+[![Dependencies](https://david-dm.org/luangjokaj/fuzzymail/status.svg)](https://david-dm.org/luangjokaj/fuzzymail)
+
+[FuzzyMail](https://www.fuzzymail.co/) is Email template generator. Making emails fun again ✌
 
 [![Preview](https://i.imgur.com/VuKitHE.png)](https://www.fuzzymail.co/)
 Demo Screenshots: [Modern Client](https://i.imgur.com/ETp8PaX.png) • [Gmail](https://i.imgur.com/kSH90xr.png) • [Outlook](https://i.imgur.com/Wi75S1q.png) • [Mobile](https://i.imgur.com/YJgdCJg.png)
@@ -15,11 +17,17 @@ Supporting old email clients it's a real pain. I wanted to create something that
 **FuzzyMail** - is a simple tool to automate the development process for creating email templates. Supporting old email clients while maintaining responsiveness. Fuzzymail is supported on over 60+ email clients.
 
 ---
+
 # Features
-- Dev server with live reload
-- PostCSS with `postcss-preset-env`
-- Reusable chunks for HTML templating
-- Inline CSS on distribution files
+|👇|Includes|
+|:-:|:---|
+|📦| Live Server|
+|🔥| Hot Reload & CSS Injection|
+|🎒| Code Minification|
+|🌈| Image Compression|
+|🕸| Templating & Partial HTML Injection|
+|🎨| PostCSS & Next Generation CSS|
+|🛎| Inline CSS on distribution files|
 
 # Documentation
 ### Installation
@@ -33,13 +41,13 @@ git clone https://github.com/luangjokaj/fuzzymail & cd fuzzymail
     
     ├── build/                   # Build files
     ├── dist/                    # Distribution files
-    ├── src/                     # Template files
+    ├── src/                     # Source files
     │   ├── assets/              # Assets directory
     │       ├── css/             # CSS files
     │       ├── img/             # Image directory
-    │   ├── includes/            # Template partials
+    │   ├── includes/            # HTML template partials
+    │   ├── index.html           # Index page
     └── .gitignore               # Git ignored files
-    └── CODE_OF_CONDUCT.md       # Code of conduct
     └── gulpfile.js              # Gulp configuration
     └── LICENSE                  # License agreements
     └── package.json             # Node packages
@@ -51,15 +59,20 @@ Start development server:
 npm run dev
 ```
 
-#### Templating ✍️
-To avoid repetitive **HTML** code the build uses [gulp-file-include](https://github.com/coderhaoxin/gulp-file-include), it allow us to re-use chunks of code written in separate files. It is recommended to place the included files in the `/src/includes` directory to keep track of changes and live-reload.
+### Templating and HTML Partials
+To avoid repetitive HTML code, FuzzyMail uses [gulp-file-include](https://github.com/haoxins/gulp-file-include). It has a simple templating synthax and allows to re-use chunks of code written in separate files. These partials are located in the directory:
+```
+src/includes/
+```
+For more information check out their documentation and examples: https://github.com/haoxins/gulp-file-include 
+
 
 ### Production
 To build the production templates:
 ```
 npm run prod
 ```
-All styles will be inlined.
+All styles will be inlined, ready to upload the generated ZIP on mailchimp or else 🚀
 
 ---
 
