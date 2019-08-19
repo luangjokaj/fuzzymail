@@ -33,12 +33,14 @@ Supporting old email clients it's a real pain. I wanted to create something that
 ### Installation
 FuzzyMail requires Node v7.5+. This is the only global dependency. You can download Node [**here**](https://nodejs.org/).
 
-### Setup project
+## Setup project
 Clone repository:
 ```
 git clone https://github.com/luangjokaj/fuzzymail & cd fuzzymail
 ```
-    
+
+### File Structure
+```
     ├── build/                   # Build files
     ├── dist/                    # Distribution files
     ├── src/                     # Source files
@@ -52,6 +54,7 @@ git clone https://github.com/luangjokaj/fuzzymail & cd fuzzymail
     └── LICENSE                  # License agreements
     └── package.json             # Node packages
     └── README.md                # You are reading this
+```
 
 ### Development
 Start development server:
@@ -64,6 +67,7 @@ To avoid repetitive HTML code, FuzzyMail uses [gulp-file-include](https://github
 ```
 src/includes/
 ```
+
 For more information check out their documentation and examples: https://github.com/haoxins/gulp-file-include 
 
 
@@ -72,6 +76,7 @@ To build the production templates:
 ```
 npm run prod
 ```
+
 All styles will be inlined, ready to upload the generated ZIP on mailchimp or else 🚀
 
 ---
