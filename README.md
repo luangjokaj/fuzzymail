@@ -34,11 +34,6 @@ Supporting old email clients it's a real pain. I wanted to create something that
 FuzzyMail requires Node v7.5+. This is the only global dependency. You can download Node [**here**](https://nodejs.org/).
 
 ## Setup project
-Clone repository:
-```
-git clone https://github.com/luangjokaj/fuzzymail & cd fuzzymail
-```
-
 ### File Structure
 ```
     ├── build/                   # Build files
@@ -54,6 +49,25 @@ git clone https://github.com/luangjokaj/fuzzymail & cd fuzzymail
     └── LICENSE                  # License agreements
     └── package.json             # Node packages
     └── README.md                # You are reading this
+```
+
+## Install FuzzyMail from NPM
+To install FuzzyMail from NPM, run the command:
+```
+sudo npm i fuzzymail -g
+```
+
+Start FuzzyMail:
+
+- Create a directory for the new email template and from there run FuzzyMail to generate the file structure:
+```
+fuzzymail
+```
+
+## Install FuzzyMail from Repository
+Clone repository:
+```
+git clone https://github.com/luangjokaj/fuzzymail & cd fuzzymail
 ```
 
 ### Development
@@ -85,5 +99,8 @@ All styles will be inlined, ready to upload the generated ZIP on mailchimp or el
 - HTML Templates http://emailframe.work/
 
 # Changelog
+**v0.0.2**
+- 📦 NEW: Run FuzzyMail globally from NPM.
+
 **v0.0.1**
 - 🚀 RELEASE: First release.
