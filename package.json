@@ -21,7 +21,10 @@
 	],
 	"homepage": "https://www.fuzzymail.co",
 	"repository": "https://github.com/luangjokaj/fuzzymail",
-	"main": "gulpfile.js",
+	"main": "./installer/index.js",
+	"bin": {
+		"fuzzymail": "./installer/index.js"
+	},
 	"scripts": {
 		"dev": "gulp dev",
 		"prod": "gulp prod"
@@ -30,9 +33,12 @@
 	"license": "MIT",
 	"dependencies": {
 		"browser-sync": "^2.26.7",
+		"chalk": "^2.4.2",
+		"commander": "^3.0.0",
 		"connect-modrewrite": "^0.10.2",
 		"cssnano": "^4.1.10",
 		"del": "^5.0.0",
+		"download": "^7.1.0",
 		"express": "^4.17.1",
 		"gulp": "^4.0.2",
 		"gulp-babel": "^8.0.0",
@@ -46,8 +52,10 @@
 		"gulp-util": "^3.0.8",
 		"jquery": "^3.4.1",
 		"normalize.css": "^8.0.1",
+		"ora": "^3.4.0",
 		"postcss-flexbugs-fixes": "^4.1.0",
 		"postcss-import": "^12.0.1",
-		"postcss-preset-env": "^6.7.0"
+		"postcss-preset-env": "^6.7.0",
+		"prompts": "^2.2.1"
 	}
 }
