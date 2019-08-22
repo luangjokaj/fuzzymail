@@ -24,8 +24,7 @@ module.exports = () => {
 		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/master/LICENSE',
 		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/master/README.md',
 		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/master/gulpfile.js',
-		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/master/package-lock.json',
-		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/master/package.json',
+		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/master/installer/package.json',
 
 		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/master/src/index.html',
 

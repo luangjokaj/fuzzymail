@@ -57,7 +57,7 @@ To install FuzzyMail from NPM, run the command:
 sudo npm i fuzzymail -g
 ```
 
-Start FuzzyMail:
+**START FUZZYMAIL**
 
 - Create a directory for the new email template and from there run FuzzyMail to generate the file structure:
 ```
@@ -67,11 +67,22 @@ fuzzymail
 ## Install FuzzyMail from Repository
 Clone repository:
 ```
-git clone https://github.com/luangjokaj/fuzzymail & cd fuzzymail
+git clone https://github.com/luangjokaj/fuzzymail
 ```
 
-### Development
-Start development server:
+- This will clone the repository on your local machine. Navigate to the newly created folder.
+
+- Replace the file: `./package.json` with `./installer/package.json` and continue with the dependency installation.
+
+**INSTALL DEPENDENCIES**
+
+```
+npm install
+```
+
+**START WORKFLOW**
+
+- We are ready to start our development server with the command:
 ```
 npm run dev
 ```
@@ -99,6 +110,10 @@ All styles will be inlined, ready to upload the generated ZIP on mailchimp or el
 - HTML Templates http://emailframe.work/
 
 # Changelog
+**v0.0.5**
+- 🚀 RELEASE: Improved installation speed for global dependencies.
+- BREAKING CHANGE: It is required to update GoPablo: `sudo npm install wordpressify -g`.
+
 **v0.0.4**
 - 👌 IMPROVE: Meta.
 
