@@ -1,4 +1,4 @@
-# [![FuzzyMail](src/assets/img/logo.svg)](https://www.fuzzymail.co/)
+# [![FuzzyMail](https://github.com/luangjokaj/fuzzymail/raw/master/src/assets/img/logo.svg?sanitize=true)](https://www.fuzzymail.co/)
 [![Dependencies](https://david-dm.org/luangjokaj/fuzzymail/status.svg)](https://david-dm.org/luangjokaj/fuzzymail)
 
 [FuzzyMail](https://www.fuzzymail.co/) is Email template generator. Making emails fun again ✌
@@ -99,6 +99,9 @@ All styles will be inlined, ready to upload the generated ZIP on mailchimp or el
 - HTML Templates http://emailframe.work/
 
 # Changelog
+**v0.0.3**
+- 📖 DOC: Update documentation.
+
 **v0.0.2**
 - 📦 NEW: Run FuzzyMail globally from NPM.
 
