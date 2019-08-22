@@ -110,6 +110,9 @@ All styles will be inlined, ready to upload the generated ZIP on mailchimp or el
 - HTML Templates http://emailframe.work/
 
 # Changelog
+**v0.0.6**
+🐛 FIX: Dependencies.
+
 **v0.0.5**
 - 🚀 RELEASE: Improved installation speed for global dependencies.
 - BREAKING CHANGE: It is required to update GoPablo: `sudo npm install wordpressify -g`.
