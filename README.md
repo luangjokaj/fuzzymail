@@ -111,7 +111,7 @@ All styles will be inlined, ready to upload the generated ZIP on mailchimp or el
 
 # Changelog
 **v0.0.6**
-🐛 FIX: Dependencies.
+- 🐛 FIX: Dependencies.
 
 **v0.0.5**
 - 🚀 RELEASE: Improved installation speed for global dependencies.
