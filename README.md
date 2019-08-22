@@ -99,6 +99,9 @@ All styles will be inlined, ready to upload the generated ZIP on mailchimp or el
 - HTML Templates http://emailframe.work/
 
 # Changelog
+**v0.0.4**
+- 👌 IMPROVE: Meta.
+
 **v0.0.3**
 - 📖 DOC: Update documentation.
 
