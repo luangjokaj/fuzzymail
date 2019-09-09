@@ -1,5 +1,5 @@
 # [![FuzzyMail](https://github.com/luangjokaj/fuzzymail/raw/master/src/assets/img/logo.svg?sanitize=true)](https://www.fuzzymail.co/)
-[![Dependencies](https://david-dm.org/luangjokaj/fuzzymail/status.svg)](https://david-dm.org/luangjokaj/fuzzymail)
+![Version](https://img.shields.io/github/package-json/v/luangjokaj/fuzzymail) [![Dependencies](https://david-dm.org/luangjokaj/fuzzymail/status.svg)](https://david-dm.org/luangjokaj/fuzzymail)
 
 [FuzzyMail](https://www.fuzzymail.co/) is Email template generator. Making emails fun again ✌
 
