@@ -54,4 +54,5 @@ module.exports = () => {
 		` ${chalk.dim('1.')} Editing your new email template: ${chalk.green(`${process.cwd()}/src`)}`,
 	);
 	console.log(` ${chalk.dim('2.')} Running: ${chalk.green('npm')} run dev`, '\n\n');
+	process.exit();
 };
