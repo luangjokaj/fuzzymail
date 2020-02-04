@@ -20,37 +20,37 @@ module.exports = () => {
 
 	// Files.
 	const filesToDownload = [
-		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-5/.gitignore',
-		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-5/LICENSE',
-		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-5/README.md',
-		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-5/gulpfile.js',
-		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-5/installer/package.json',
+		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-6/.gitignore',
+		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-6/LICENSE',
+		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-6/README.md',
+		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-6/gulpfile.js',
+		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-6/installer/package.json',
 
-		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-5/src/index.html',
+		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-6/src/index.html',
 
-		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-5/src/includes/footer.html',
-		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-5/src/includes/header.html',
-		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-5/src/includes/logo.html',
-		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-5/src/includes/single-column.html',
-		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-5/src/includes/socials.html',
-		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-5/src/includes/title.html',
-		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-5/src/includes/two-columns.html',
+		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-6/src/includes/footer.html',
+		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-6/src/includes/header.html',
+		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-6/src/includes/logo.html',
+		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-6/src/includes/single-column.html',
+		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-6/src/includes/socials.html',
+		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-6/src/includes/title.html',
+		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-6/src/includes/two-columns.html',
 
-		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-5/src/assets/css/email-framework.css',
-		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-5/src/assets/css/fuzzy.css',
-		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-5/src/assets/css/globals.css',
-		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-5/src/assets/css/styles.css',
-		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-5/src/assets/css/variables.css',
+		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-6/src/assets/css/email-framework.css',
+		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-6/src/assets/css/fuzzy.css',
+		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-6/src/assets/css/globals.css',
+		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-6/src/assets/css/styles.css',
+		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-6/src/assets/css/variables.css',
 
-		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-5/src/assets/img/socialmedia/email.png',
-		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-5/src/assets/img/socialmedia/facebook.png',
-		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-5/src/assets/img/socialmedia/instagram.png',
-		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-5/src/assets/img/socialmedia/linkedin.png',
-		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-5/src/assets/img/socialmedia/twitter.png',
+		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-6/src/assets/img/socialmedia/email.png',
+		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-6/src/assets/img/socialmedia/facebook.png',
+		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-6/src/assets/img/socialmedia/instagram.png',
+		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-6/src/assets/img/socialmedia/linkedin.png',
+		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-6/src/assets/img/socialmedia/twitter.png',
 
-		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-5/src/assets/img/header.png',
-		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-5/src/assets/img/logo.png',
-		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-5/src/assets/img/logo.svg',
+		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-6/src/assets/img/header.png',
+		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-6/src/assets/img/logo.png',
+		'https://raw.githubusercontent.com/luangjokaj/fuzzymail/v0.0.8-6/src/assets/img/logo.svg',
 	];
 
 	// Organise file structure
