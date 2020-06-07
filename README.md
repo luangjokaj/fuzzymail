@@ -1,7 +1,9 @@
 # [![FuzzyMail](https://github.com/luangjokaj/fuzzymail/raw/master/src/assets/img/logo.svg?sanitize=true)](https://www.fuzzymail.co/)
 ![Version](https://img.shields.io/github/package-json/v/luangjokaj/fuzzymail) [![Dependencies](https://david-dm.org/luangjokaj/fuzzymail/status.svg)](https://david-dm.org/luangjokaj/fuzzymail)
 
-[FuzzyMail](https://www.fuzzymail.co/) is Email template generator. Making emails fun again ✌
+| Information | Discord | Donate |
+|:------------|:---------|:-------|
+| [FuzzyMail](https://www.fuzzymail.co/) is Email template generator. Making emails fun again ✌| [![Discord server](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.icons8.com%2Fcolor%2F2x%2Fdiscord-logo.png&f=1&nofb=1)](https://discord.gg/qE7e93) | [![BuyMeACoffee](https://www.buymeacoffee.com/assets/img/guidelines/logo-mark-1.svg)](https://www.buymeacoffee.com/luangjokaj) |
 
 [![Preview](https://i.imgur.com/VuKitHE.png)](https://www.fuzzymail.co/)
 Demo Screenshots: [Modern Client](https://i.imgur.com/ETp8PaX.png) • [Gmail](https://i.imgur.com/kSH90xr.png) • [Outlook](https://i.imgur.com/Wi75S1q.png) • [Mobile](https://i.imgur.com/YJgdCJg.png)
