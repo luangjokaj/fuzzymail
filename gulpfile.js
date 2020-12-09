@@ -101,7 +101,7 @@ function staticFilesDev() {
 					prefix: '@@',
 					basepath: '@file',
 				},
-			}),
+			})
 		)
 		.pipe(dest('./build'));
 }
@@ -135,13 +135,13 @@ function staticFilesProd() {
 					prefix: '@@',
 					basepath: '@file',
 				},
-			}),
+			})
 		)
 		.pipe(
 			htmlmin({
 				collapseWhitespace: true,
 				ignoreCustomFragments: [/<%[\s\S]*?%>/, /<\?[=|php]?[\s\S]*?\?>/],
-			}),
+			})
 		)
 		.pipe(dest('./dist'));
 }
@@ -153,7 +153,7 @@ function inlineStyles() {
 				applyStyleTags: true,
 				removeStyleTags: false,
 				removeLinkTags: false,
-			}),
+			})
 		)
 		.pipe(dest('./dist'));
 }
@@ -164,7 +164,7 @@ function processImages() {
 		.pipe(
 			imagemin([imagemin.svgo({ plugins: [{ removeViewBox: true }] })], {
 				verbose: true,
-			}),
+			})
 		)
 		.pipe(dest('./dist/assets/img'))
 		.on('end', () => {
@@ -174,12 +174,18 @@ function processImages() {
 		});
 }
 
-exports.prod = series(cleanProd, stylesProd, staticFilesProd, processImages, inlineStyles);
+exports.prod = series(
+	cleanProd,
+	stylesProd,
+	staticFilesProd,
+	processImages,
+	inlineStyles
+);
 
 /* -------------------------------------------------------------------------------------------------
 Utility Tasks
 -------------------------------------------------------------------------------------------------- */
-const onError = err => {
+const onError = (err) => {
 	gutil.beep();
 	gutil.log(fuzzyMail + ' - ' + errorMsg + ' ' + err.toString());
 	this.emit('end');
@@ -189,7 +195,8 @@ const onError = err => {
 Messages
 -------------------------------------------------------------------------------------------------- */
 const errorMsg = '\x1b[41mError\x1b[0m';
-const filesGenerated = 'Your production file are generated in: \x1b[1m' + __dirname + '/dist/ ✅';
+const filesGenerated =
+	'Your production file are generated in: \x1b[1m' + __dirname + '/dist/ ✅';
 
 const fuzzyMail = '\x1b[42m\x1b[1m📨 FuzzyMail\x1b[0m';
 const fuzzyMailUrl = '\x1b[2m - https://www.fuzzymail.co/\x1b[0m';

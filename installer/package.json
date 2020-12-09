@@ -1,6 +1,6 @@
 {
 	"name": "fuzzymail",
-	"version": "0.0.8-11",
+	"version": "0.0.8-12",
 	"description": "Making emails fun again.",
 	"keywords": [
 		"boilerplate",
@@ -33,7 +33,6 @@
 	"license": "MIT",
 	"dependencies": {
 		"browser-sync": "^2.26.13",
-		"cherry-grid": "^0.1.30",
 		"connect-modrewrite": "^0.10.2",
 		"cssnano": "^4.1.10",
 		"del": "^6.0.0",
@@ -50,8 +49,8 @@
 		"gulp-util": "^3.0.8",
 		"jquery": "^3.5.1",
 		"normalize.css": "^8.0.1",
-		"postcss": "^8.1.7",
-		"postcss-flexbugs-fixes": "^5.0.1",
+		"postcss": "^8.2.1",
+		"postcss-flexbugs-fixes": "^5.0.2",
 		"postcss-import": "^13.0.0",
 		"postcss-preset-env": "^6.7.0"
 	}

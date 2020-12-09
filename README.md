@@ -1,9 +1,10 @@
 # [![FuzzyMail](https://github.com/luangjokaj/fuzzymail/raw/master/src/assets/img/logo.svg?sanitize=true)](https://www.fuzzymail.co/)
-![Version](https://img.shields.io/github/package-json/v/luangjokaj/fuzzymail) [![Dependencies](https://david-dm.org/luangjokaj/fuzzymail/status.svg)](https://david-dm.org/luangjokaj/fuzzymail)
+
+[![Version](https://img.shields.io/github/package-json/v/luangjokaj/fuzzymail)](https://www.fuzzymail.co/) [![Dependencies](https://img.shields.io/david/luangjokaj/fuzzymail)](https://www.fuzzymail.co/)
 
 | Information | Discord | Donate |
 |:------------|:---------|:-------|
-| [FuzzyMail](https://www.fuzzymail.co/) is Email template generator. Making emails fun again ✌<br><br>**Problem:** Supporting old email clients it's a real pain. I wanted to create something that can be flexible in design and yet support legacy email clients like Outlook.<br><br>**Solution:** FuzzyMail - is a simple tool for generating email templates. Supporting old email clients while maintaining responsiveness. Fuzzymail is supported on over 60+ email clients.| [![Discord server](https://svgshare.com/i/Lqc.svg)](https://discord.gg/qE7e93) | [![BuyMeACoffee](https://www.buymeacoffee.com/assets/img/guidelines/logo-mark-1.svg)](https://www.buymeacoffee.com/luangjokaj) |
+| [FuzzyMail](https://www.fuzzymail.co/) is Email template generator. Making emails fun again ✌<br><br>**Problem:** Supporting old email clients it's a real pain. I wanted to create something that can be flexible in design and yet support legacy email clients like Outlook.<br><br>**Solution:** FuzzyMail - is a simple tool for generating email templates. Supporting old email clients while maintaining responsiveness. Fuzzymail is supported on over 60+ email clients.| [![Discord server](https://svgshare.com/i/Lqc.svg)](https://discord.gg/uQFdMddMZw) | [![BuyMeACoffee](https://www.buymeacoffee.com/assets/img/guidelines/logo-mark-1.svg)](https://www.buymeacoffee.com/luangjokaj) |
 
 [![Preview](https://i.imgur.com/VuKitHE.png)](https://www.fuzzymail.co/)
 Demo Screenshots: [Modern Client](https://i.imgur.com/ETp8PaX.png) • [Gmail](https://i.imgur.com/kSH90xr.png) • [Outlook](https://i.imgur.com/Wi75S1q.png) • [Mobile](https://i.imgur.com/YJgdCJg.png)
@@ -23,7 +24,7 @@ Demo Screenshots: [Modern Client](https://i.imgur.com/ETp8PaX.png) • [Gmail](h
 
 # Documentation
 ### Installation
-FuzzyMail requires Node v7.5+. This is the only global dependency. You can download Node [**here**](https://nodejs.org/).
+FuzzyMail requires **Node.js v12+**. This is the only global dependency. You can download Node.js [**here**](https://nodejs.org/).
 
 ## Setup project
 ### File Structure
@@ -37,24 +38,19 @@ FuzzyMail requires Node v7.5+. This is the only global dependency. You can downl
     │   ├── includes/            # HTML template partials
     │   ├── index.html           # Index page
     └── .gitignore               # Git ignored files
+    └── .editorconfig            # Editor code styles
     └── gulpfile.js              # Gulp configuration
     └── LICENSE                  # License agreements
-    └── package.json             # Node packages
+    └── package.json             # Node.js packages
     └── README.md                # You are reading this
 ```
 
 ## Install FuzzyMail from NPM
-To install FuzzyMail from NPM, run the command:
-```
-sudo npm i fuzzymail -g
-```
-
-**START FUZZYMAIL**
-
 - Create a directory for the new email template and from there run FuzzyMail to generate the file structure:
 ```
-fuzzymail
+npx fuzzymail
 ```
+That's it 🍾 easy as that. Now start the development workflow: [Start Workflow](#start-workflow)
 
 ## Install FuzzyMail from Repository
 Clone repository:
@@ -62,7 +58,7 @@ Clone repository:
 git clone https://github.com/luangjokaj/fuzzymail
 ```
 
-- This will clone the repository on your local machine. Navigate to the newly created folder.
+- This will clone the repository on your local machine. Navigate to the newly created directory.
 
 - Replace the file: `./package.json` with `./installer/package.json` and continue with the dependency installation.
 
@@ -72,12 +68,13 @@ git clone https://github.com/luangjokaj/fuzzymail
 npm install
 ```
 
-**START WORKFLOW**
+## Start Workflow
 
-- We are ready to start our development server with the command:
+- To start the development server run the command:
 ```
 npm run dev
 ```
+- You are ready to go! Happy coding! 🤓
 
 ### Templating and HTML Partials
 To avoid repetitive HTML code, FuzzyMail uses [gulp-file-include](https://github.com/haoxins/gulp-file-include). It has a simple templating synthax and allows to re-use chunks of code written in separate files. These partials are located in the directory:
@@ -86,7 +83,6 @@ src/includes/
 ```
 
 For more information check out their documentation and examples: https://github.com/haoxins/gulp-file-include 
-
 
 ### Production
 To build the production templates:

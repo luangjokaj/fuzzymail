@@ -1,6 +1,6 @@
 {
 	"name": "fuzzymail",
-	"version": "0.0.8-11",
+	"version": "0.0.8-12",
 	"description": "Making emails fun again.",
 	"keywords": [
 		"boilerplate",
@@ -33,10 +33,9 @@
 	"license": "MIT",
 	"dependencies": {
 		"chalk": "^4.1.0",
-		"cherry-grid": "^0.1.30",
 		"commander": "^6.2.0",
 		"download": "^8.0.0",
-		"execa": "^4.1.0",
+		"execa": "^5.0.0",
 		"ora": "^5.1.0",
 		"prompts": "^2.4.0"
 	}
