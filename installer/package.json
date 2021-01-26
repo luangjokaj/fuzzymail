@@ -32,7 +32,7 @@
 	"author": "Luan Gjokaj <luan@riangle.com>",
 	"license": "MIT",
 	"dependencies": {
-		"browser-sync": "^2.26.13",
+		"browser-sync": "^2.26.14",
 		"connect-modrewrite": "^0.10.2",
 		"cssnano": "^4.1.10",
 		"del": "^6.0.0",
