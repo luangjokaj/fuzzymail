@@ -1,17 +1,14 @@
 :root {
 
 	/* Colors ----------------------------------------------------- */
-	--color-primary: #1F2D3D;
-	--color-secondary: #8492A6;
+	--color-primary: #1f2d3d;
+	--color-secondary: #8492a6;
 	--color-tertiary: #f7f7f7;
-
 	--color-dark: #000;
 	--color-light: #fff;
-
-	--color-gray-light: #E5E5E5;
+	--color-gray-light: #e5e5e5;
 	--color-gray-medium: #666666;
 	--color-gray-dark: #4a4a4a;
-
 	--color-success: #28a745;
 	--color-error: #dc3545;
 	--color-warning: #ffc107;
