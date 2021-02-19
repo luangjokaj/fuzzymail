@@ -44,15 +44,10 @@ const pluginsProd = [
 			'color-mod-function': true,
 			'custom-media': true,
 		},
+		preserve: false,
 	}),
-	require('cssnano')({
-		preset: [
-			'default',
-			{
-				discardComments: true,
-			},
-		],
-	}),
+	require('autoprefixer'),
+	require('cssnano')(),
 ];
 
 //--------------------------------------------------------------------------------------------------
