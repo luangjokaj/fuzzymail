@@ -65,7 +65,8 @@ function devServer() {
 
 	watch('./src/assets/css/**/*.css', stylesDev);
 	watch('./src/assets/img/**', series(copyImagesDev, Reload));
-	watch('./src/**/*.html', series(staticFilesDev, Reload));
+	watch('./src/includes/*.html', series(stylesDev, staticFilesDev, Reload));
+	watch('./src/*.html', series(stylesDev, staticFilesDev, Reload));
 }
 
 function Reload(done) {
