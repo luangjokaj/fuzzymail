@@ -1,7 +1,7 @@
 {
 	"name": "fuzzymail",
 	"version": "0.0.8-18",
-	"description": "Making emails fun again.",
+	"description": "Responsive email template generator.",
 	"keywords": [
 		"boilerplate",
 		"css",
@@ -17,17 +17,14 @@
 		"sass",
 		"template",
 		"themes",
-		"workflow"
+		"workflow",
+		"cherry"
 	],
 	"homepage": "https://www.fuzzymail.co",
 	"repository": "https://github.com/luangjokaj/fuzzymail",
 	"main": "./installer/index.js",
 	"bin": {
 		"fuzzymail": "./installer/index.js"
-	},
-	"scripts": {
-		"dev": "gulp dev",
-		"prod": "gulp prod"
 	},
 	"author": "Luan Gjokaj <luan@riangle.com>",
 	"license": "MIT",

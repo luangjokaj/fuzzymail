@@ -1,3 +1,34 @@
+html,
+body {
+	font-family: var(--font-text);
+	font-size: var(--size-text-mobile);
+	line-height: var(--lineheight-text-mobile);
+	margin: 0;
+	padding: 0;
+	width: 100%;
+
+	@media (--screen-lg) {
+		font-size: var(--size-text-mobile);
+		line-height: var(--lineheight-text-mobile);
+	}
+}
+
+img {
+	max-width: 100%;
+	width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+	line-height: 1.35;
+}
+
 body,
 .bg {
 	background: var(--color-gray-light);
@@ -7,8 +38,12 @@ body,
 	color: var(--color-dark);
 }
 
+.light {
+	color: var(--color-light);
+}
+
 .gray {
-	color: var(--color-gray-medium);
+	color: var(--color-gray);
 }
 
 .layout {
@@ -21,7 +56,7 @@ body,
 	color: var(--color-light);
 
 	& td {
-		padding: 20px 20px 0;
+		padding: 20px 0 0;
 
 		& img {
 			width: 600px;
@@ -31,11 +66,15 @@ body,
 }
 
 .footer {
-	color: var(--color-gray-medium);
-	background: var(--color-tertiary);
+	color: var(--color-light);
+	background: var(--color-secondary);
 
 	& td {
 		padding: 20px;
+	}
+
+	& a {
+		color: var(--color-light);
 	}
 }
 
@@ -49,15 +88,10 @@ body,
 	}
 }
 
-.removeBottom {
+.remove-bottom {
 	& td {
 		padding-bottom: 0;
 	}
-}
-
-.spacing-10 {
-	font-size: 10px;
-	line-height: 10px;
 }
 
 .logo-wrapper {

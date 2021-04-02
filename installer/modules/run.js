@@ -38,9 +38,7 @@ module.exports = () => {
 
 		`${upstreamUrl}/src/assets/css/email-framework.css`,
 		`${upstreamUrl}/src/assets/css/fuzzy.css`,
-		`${upstreamUrl}/src/assets/css/globals.css`,
 		`${upstreamUrl}/src/assets/css/styles.css`,
-		`${upstreamUrl}/src/assets/css/variables.css`,
 
 		`${upstreamUrl}/src/assets/img/socialmedia/email.png`,
 		`${upstreamUrl}/src/assets/img/socialmedia/facebook.png`,
@@ -48,9 +46,8 @@ module.exports = () => {
 		`${upstreamUrl}/src/assets/img/socialmedia/linkedin.png`,
 		`${upstreamUrl}/src/assets/img/socialmedia/twitter.png`,
 
-		`${upstreamUrl}/src/assets/img/header.png`,
+		`${upstreamUrl}/src/assets/img/header.jpg`,
 		`${upstreamUrl}/src/assets/img/logo.png`,
-		`${upstreamUrl}/src/assets/img/logo.svg`,
 	];
 
 	// Organise file structure
@@ -68,9 +65,7 @@ module.exports = () => {
 	const cssFiles = [
 		'email-framework.css',
 		'fuzzy.css',
-		'globals.css',
 		'styles.css',
-		'variables.css',
 	];
 	const socialImgFiles = [
 		'email.png',
@@ -79,7 +74,7 @@ module.exports = () => {
 		'linkedin.png',
 		'twitter.png',
 	];
-	const imgFiles = ['header.png', 'logo.png', 'logo.svg'];
+	const imgFiles = ['header.jpg', 'logo.png'];
 
 	// Start
 	console.log('\n');
