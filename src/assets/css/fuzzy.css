@@ -50,6 +50,8 @@ body,
 	max-width: 600px;
 	margin: auto;
 	background: var(--color-light);
+	border-bottom-right-radius: 12px;
+	border-bottom-left-radius: 12px;
 }
 
 .header {
@@ -68,6 +70,8 @@ body,
 .footer {
 	color: var(--color-light);
 	background: var(--color-secondary);
+	border-bottom-right-radius: 12px;
+	border-bottom-left-radius: 12px;
 
 	& td {
 		padding: 20px;
