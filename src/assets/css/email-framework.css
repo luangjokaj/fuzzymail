@@ -50,6 +50,10 @@ div[style*="margin: 16px 0;"] {
 	margin: 0 !important;
 }
 
+.desktopOff {
+	display: none;
+}
+
 /* MEDIA QUERIES */
 @media all and (max-width: 680px) {
 	.wrapper {
@@ -81,5 +85,13 @@ div[style*="margin: 16px 0;"] {
 	*[class*="mobileOn"] {
 		display: block !important;
 		max-height: none !important;
+	}
+
+	.item {
+		padding: 20px !important;
+	}
+
+	table {
+		width: 100% !important;
 	}
 }

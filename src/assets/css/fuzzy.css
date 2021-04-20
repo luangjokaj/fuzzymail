@@ -13,6 +13,10 @@ body {
 	}
 }
 
+* {
+	box-sizing: border-box;
+}
+
 img {
 	max-width: 100%;
 	width: 100%;
@@ -84,6 +88,14 @@ body,
 
 .item {
 	padding: 20px;
+
+	&.pr-10 {
+		padding-right: 10px;
+	}
+
+	&.pl-10 {
+		padding-left: 10px;
+	}
 }
 
 .single {
@@ -126,16 +138,40 @@ table {
 	max-width: 600px;
 }
 
-.desktopOff {
-	display: none;
-}
+.multi-columns {
+	width: 100%;
 
-@media all and (max-width: 680px) {
-	.item {
-		padding: 20px !important;
+	& td,
+	& th {
+		padding: 0 20px;
 	}
 
-	table {
-		width: 100% !important;
+	@media (max-width: 680px) {
+		& td,
+		& th {
+			padding: 0 20px !important;
+		}
+	}
+
+	&.nested {
+		& td,
+		& th {
+			padding: 0;
+		}
+
+		@media (max-width: 680px) {
+			& td,
+			& th {
+				padding: 0 !important;
+			}
+		}
+	}
+
+	&.main-table {
+		& td {
+			white-space: nowrap;
+			padding: 10px 20px;
+			border-bottom: solid 1px var(--color-gray-light);
+		}
 	}
 }
