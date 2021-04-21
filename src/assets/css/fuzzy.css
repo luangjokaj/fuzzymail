@@ -3,9 +3,6 @@ body {
 	font-family: var(--font-text);
 	font-size: var(--size-text-desktop);
 	line-height: var(--lineheight-text-desktop);
-	margin: 0;
-	width: 100%;
-	mso-line-height-rule: exactly;
 }
 
 body {
