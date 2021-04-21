@@ -1,9 +1,11 @@
-@custom-media --screen-mobile (max-width: 992px);
+@custom-media --screen-mobile (max-width: 640px);
 
 /* https://github.com/g13nn/Email-Framework */
 /* CLIENT-SPECIFIC STYLES */
 
-body {
+body,
+html {
+	padding: 0 !important;
 	margin: 0 !important;
 	width: 100% !important;
 }
@@ -14,7 +16,6 @@ td,
 a {
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
-	word-break: break-all;
 }
 
 table,
@@ -35,6 +36,11 @@ img {
 
 table {
 	border-collapse: collapse !important;
+}
+
+table p {
+	margin: 0;
+	padding: 0;
 }
 
 /* iOS BLUE LINKS */
