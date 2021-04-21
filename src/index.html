@@ -9,7 +9,7 @@
 		<link href="@@webRoot/assets/css/styles.css" async defer rel="stylesheet" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
 			rel="stylesheet"
 			data-embed
 		/>
@@ -21,22 +21,55 @@
 			<style>
 				.outlook {
 					font-family: arial, sans-serif;
+					mso-line-height-rule: exactly;
+				}
+
+				.layout {
+					width: 600px !important;
+				}
+
+				* {
+					line-height: 180% !important;
 				}
 			</style>
 		<![endif]-->
 	</head>
 	<body>
-		<center>
-			<table width="600" border="0" cellpadding="0" cellspacing="0" class="layout">
-				<tr>
-					<td align="center" valign="top">
-						@@include('./includes/logo.html') @@include('./includes/header.html')
-						@@include('./includes/title.html')
-						@@include('./includes/single-column.html')
-						@@include('./includes/socials.html') @@include('./includes/footer.html')
-					</td>
-				</tr>
-			</table>
-		</center>
+		<table
+			border="0"
+			align="center"	
+			cellpadding="0"
+			cellspacing="0"
+			class="main-table"
+		>
+			<tr>
+				<!--[if gte mso 9]>
+				<td class="reset">&nbsp;</td>
+				<![endif]-->
+				<td width="600">
+					<table
+						width="600"
+						border="0"
+						cellpadding="0"
+						cellspacing="0"
+						class="layout"
+					>
+						<tr>
+							<td width="600">
+								@@include('./includes/logo.html') @@include('./includes/header.html')
+								@@include('./includes/title.html')
+								@@include('./includes/single-column.html')
+								@@include('./includes/two-columns.html')
+								@@include('./includes/socials.html')
+								@@include('./includes/footer.html')
+							</td>
+						</tr>
+					</table>
+				</td>
+				<!--[if gte mso 9]>
+				<td class="reset">&nbsp;</td>
+				<![endif]-->
+			</tr>
+		</table>
 	</body>
 </html>

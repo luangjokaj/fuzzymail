@@ -1,11 +1,20 @@
+@custom-media --screen-mobile (max-width: 992px);
+
 /* https://github.com/g13nn/Email-Framework */
 /* CLIENT-SPECIFIC STYLES */
+
+body {
+	margin: 0 !important;
+	width: 100% !important;
+}
+
 body,
 table,
 td,
 a {
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
+	word-break: break-all;
 }
 
 table,
@@ -18,7 +27,6 @@ img {
 	-ms-interpolation-mode: bicubic;
 }
 
-/* RESET STYLES */
 img {
 	border: 0;
 	outline: none;
@@ -27,12 +35,6 @@ img {
 
 table {
 	border-collapse: collapse !important;
-}
-
-body {
-	margin: 0 !important;
-	padding: 0 !important;
-	width: 100% !important;
 }
 
 /* iOS BLUE LINKS */
@@ -51,7 +53,7 @@ div[style*="margin: 16px 0;"] {
 }
 
 /* MEDIA QUERIES */
-@media all and (max-width: 680px) {
+@media all and (--screen-mobile) {
 	.wrapper {
 		width: 100% !important;
 		padding: 0 !important;
@@ -81,5 +83,13 @@ div[style*="margin: 16px 0;"] {
 	*[class*="mobileOn"] {
 		display: block !important;
 		max-height: none !important;
+	}
+
+	.item {
+		padding: 20px !important;
+	}
+
+	table {
+		width: 100% !important;
 	}
 }
