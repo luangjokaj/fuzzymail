@@ -3,12 +3,18 @@
 /* https://github.com/g13nn/Email-Framework */
 /* CLIENT-SPECIFIC STYLES */
 
+body {
+	margin: 0 !important;
+	width: 100% !important;
+}
+
 body,
 table,
 td,
 a {
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
+	word-break: break-all;
 }
 
 table,

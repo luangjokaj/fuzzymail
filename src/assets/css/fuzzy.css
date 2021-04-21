@@ -44,21 +44,40 @@ img {
 	display: block;
 }
 
-table {
-	background: var(--color-light);
-	max-width: 600px;
+.main-table {
+	background: var(--color-gray-light);
+	padding: 0px;
+	margin: 0px;
+	width: 100%
 }
 
 .layout {
-	width: 100%;
+	width: 600px;
 	max-width: 600px;
 	margin: auto auto 20px;
 	background: var(--color-light);
 	border-bottom-right-radius: 12px;
 	border-bottom-left-radius: 12px;
+
+	@media (--screen-mobile) {
+		width: 100% !important;
+	}
+}
+
+.reset {
+	margin: 0;
+	padding: 0;
+	min-width: 20px;
 }
 
 .logo-wrapper {
+	width: 100%;
+
+	& tr,
+	& td {
+		width: 100%;
+	}
+
 	& td {
 		padding-top: 20px;
 	}
@@ -67,6 +86,7 @@ table {
 .logo {
 	width: 77px;
 	height: 77px;
+	margin: auto;
 }
 
 .header {
@@ -88,6 +108,13 @@ table {
 }
 
 .single {
+	width: 100%;
+
+	& tr,
+	& td {
+		width: 100%;
+	}
+
 	& td {
 		padding: 20px;
 	}
@@ -101,13 +128,12 @@ table {
 
 .text-lineheight {
 	font-size: var(--size-text-desktop);
-	line-height: 18px;
-	mso-line-height-rule: exactly;
+	line-height: var(--lineheight-text-desktop);
 }
 
 .title-lineheight {
-	line-height: 28px;
-	mso-line-height-rule: exactly;
+	font-size: var(--size-h1-desktop);
+	line-height: var(--lineheight-h1-desktop);
 }
 
 .black {
@@ -156,16 +182,33 @@ table {
 	}
 }
 
+.socials {
+	width: 100%;
+
+	& tr {
+		width: 100%;
+	}
+
+	& td {
+		padding: 20px;
+	}
+}
+
 .social-icon {
 	width: 32px;
 	height: 32px;
 }
 
 .footer {
+	width: 100%;
 	color: var(--color-light);
 	background: var(--color-secondary);
 	border-bottom-right-radius: 12px;
 	border-bottom-left-radius: 12px;
+
+	& td {
+		width: 100%;
+	}
 
 	& td {
 		padding: 20px;
