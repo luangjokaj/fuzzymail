@@ -13,6 +13,7 @@ const gutil = require('gulp-util');
 const htmlmin = require('gulp-htmlmin');
 const imagemin = require('gulp-imagemin');
 const inlineCss = require('gulp-inline-css');
+const inline = require('gulp-inline');
 const modRewrite = require('connect-modrewrite');
 const plumber = require('gulp-plumber');
 const postcss = require('gulp-postcss');
@@ -144,6 +145,12 @@ function staticFilesProd() {
 
 function inlineStyles() {
 	return src('./dist/*.html')
+		.pipe(
+			inline({
+				base: './dist',
+				disabledTypes: ['svg', 'img'],
+			})
+		)
 		.pipe(
 			inlineCss({
 				applyStyleTags: true,
