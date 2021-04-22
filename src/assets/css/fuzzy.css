@@ -111,7 +111,7 @@ img {
 
 .header-image {
 	width: 600px;
-	height: 314px;
+	height: auto;
 
 	@media (--screen-mobile) {
 		width: 100% !important;
@@ -182,6 +182,11 @@ img {
 		& th {
 			padding: 0 20px !important;
 
+			&.mobile {
+				width: 100% !important;
+				display: block !important;
+			}
+
 			&.first {
 				padding-bottom: 20px !important;
 				padding-right: 20px !important;
@@ -195,7 +200,11 @@ img {
 }
 
 .socials {
-	width: 100%;
+	width: 600px;
+
+	@media (--screen-mobile) {
+		width: 100% !important;
+	}
 
 	& tr {
 		width: 100%;
@@ -212,11 +221,15 @@ img {
 }
 
 .footer {
-	width: 100%;
 	color: var(--color-light);
 	background: var(--color-secondary);
 	border-bottom-right-radius: 12px;
 	border-bottom-left-radius: 12px;
+	width: 600px;
+
+	@media (--screen-mobile) {
+		width: 100% !important;
+	}
 
 	& td {
 		width: 100%;
