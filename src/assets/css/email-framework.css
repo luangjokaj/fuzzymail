@@ -5,7 +5,29 @@ html {
 	padding: 0 !important;
 	margin: 0 !important;
 	width: 100% !important;
+	font-family: var(--font-text);
+	font-size: var(--size-text-desktop);
+	line-height: var(--lineheight-text-desktop);
 	mso-line-height-rule: exactly;
+}
+
+body {
+	background: var(--color-gray-light);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+	line-height: 1.35;
 }
 
 body,
@@ -24,12 +46,11 @@ td {
 
 img {
 	-ms-interpolation-mode: bicubic;
-}
-
-img {
 	border: 0;
 	outline: none;
 	text-decoration: none;
+	margin: 0;
+	padding: 0;
 }
 
 table {
@@ -45,7 +66,7 @@ table {
 	}
 }
 
-/* iOS BLUE LINKS */
+/* iOS Blue Links */
 a[x-apple-data-detectors] {
 	color: inherit !important;
 	text-decoration: none !important;
@@ -55,7 +76,7 @@ a[x-apple-data-detectors] {
 	line-height: inherit !important;
 }
 
-/* ANDROID CENTER FIX */
+/* Android center fix */
 div[style*="margin: 16px 0;"] {
 	margin: 0 !important;
 }
