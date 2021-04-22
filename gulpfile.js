@@ -167,7 +167,7 @@ function inlineStyles() {
 		.pipe(
 			inject.before(
 				'</head>',
-				'<link href="./assets/css/styles.css" async defer="defer" rel="stylesheet" media="all">'
+				'<link href="./assets/css/styles.css" async defer rel="stylesheet">'
 			)
 		)
 		.pipe(inject.replace('"./assets', `"${productionURL}/assets`))
