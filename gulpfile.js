@@ -22,6 +22,11 @@ const postcssImport = require('postcss-import');
 const postcssPresetEnv = require('postcss-preset-env');
 const sourcemaps = require('gulp-sourcemaps');
 
+/* -------------------------------------------------------------------------------------------------
+Production URL
+-------------------------------------------------------------------------------------------------- */
+const productionURL = '.';
+
 //--------------------------------------------------------------------------------------------------
 /* -------------------------------------------------------------------------------------------------
 PostCSS Plugins
@@ -165,6 +170,7 @@ function inlineStyles() {
 				'<link href="./assets/css/styles.css" async defer="defer" rel="stylesheet" media="all">'
 			)
 		)
+		.pipe(inject.replace('"./assets', `"${productionURL}/assets`))
 		.pipe(dest('./dist'));
 }
 
