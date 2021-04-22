@@ -14,6 +14,7 @@ const htmlmin = require('gulp-htmlmin');
 const imagemin = require('gulp-imagemin');
 const inlineCss = require('gulp-inline-css');
 const inline = require('gulp-inline');
+const inject = require('gulp-inject-string');
 const modRewrite = require('connect-modrewrite');
 const plumber = require('gulp-plumber');
 const postcss = require('gulp-postcss');
@@ -157,6 +158,12 @@ function inlineStyles() {
 				removeStyleTags: false,
 				removeLinkTags: false,
 			})
+		)
+		.pipe(
+			inject.before(
+				'</head>',
+				'<link href="./assets/css/styles.css" async defer="defer" rel="stylesheet" media="all">'
+			)
 		)
 		.pipe(dest('./dist'));
 }
