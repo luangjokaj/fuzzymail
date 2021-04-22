@@ -164,12 +164,6 @@ function inlineStyles() {
 				removeLinkTags: false,
 			})
 		)
-		.pipe(
-			inject.before(
-				'</head>',
-				'<link href="./assets/css/styles.css" async defer rel="stylesheet">'
-			)
-		)
 		.pipe(inject.replace('"./assets', `"${productionURL}/assets`))
 		.pipe(dest('./dist'));
 }
