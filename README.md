@@ -1,6 +1,6 @@
 # [![FuzzyMail](https://fuzzymail.s3-eu-west-1.amazonaws.com/img/fuzzymail-repository-logo.svg#1)](https://www.fuzzymail.co/)
 
-[![Version](https://img.shields.io/github/package-json/v/luangjokaj/fuzzymail)](https://www.fuzzymail.co/) [![Dependencies](https://img.shields.io/david/luangjokaj/fuzzymail)](https://www.fuzzymail.co/)
+[![Version](https://img.shields.io/github/package-json/v/luangjokaj/fuzzymail)](https://www.fuzzymail.co/)
 
 Responsive email template generator.
 
