@@ -4,23 +4,26 @@ Build Configuration
 Contributors: Luan Gjokaj
 
 -------------------------------------------------------------------------------------------------- */
-const { gulp, series, parallel, dest, src, watch } = require('gulp');
-const browserSync = require('browser-sync').create();
-const cssnano = require('cssnano');
-const del = require('del');
-const fileinclude = require('gulp-file-include');
-const gutil = require('gulp-util');
-const htmlmin = require('gulp-htmlmin');
-const imagemin = require('gulp-imagemin');
-const inlineCss = require('gulp-inline-css');
-const inline = require('gulp-inline');
-const inject = require('gulp-inject-string');
-const modRewrite = require('connect-modrewrite');
-const plumber = require('gulp-plumber');
-const postcss = require('gulp-postcss');
-const postcssImport = require('postcss-import');
-const postcssPresetEnv = require('postcss-preset-env');
-const sourcemaps = require('gulp-sourcemaps');
+import pkg from 'gulp';
+import browserSync from 'browser-sync';
+import cssnano from 'cssnano';
+import del from 'del';
+import fileinclude from 'gulp-file-include';
+import gutil from 'gulp-util';
+import htmlmin from 'gulp-htmlmin';
+import imagemin from 'gulp-imagemin';
+import inlineCss from 'gulp-inline-css';
+import inline from 'gulp-inline';
+import inject from 'gulp-inject-string';
+import modRewrite from 'connect-modrewrite';
+import plumber from 'gulp-plumber';
+import postcss from 'gulp-postcss';
+import postcssImport from 'postcss-import';
+import postcssPresetEnv from 'postcss-preset-env';
+import sourcemaps from 'gulp-sourcemaps';
+import autoprefixer from 'autoprefixer';
+
+const { gulp, series, parallel, dest, src, watch } = pkg;
 
 /* -------------------------------------------------------------------------------------------------
 Production URL
@@ -53,8 +56,8 @@ const pluginsListProd = [
 		},
 		preserve: false,
 	}),
-	require('autoprefixer'),
-	require('cssnano')(),
+	autoprefixer(),
+	cssnano(),
 ];
 
 //--------------------------------------------------------------------------------------------------
@@ -109,7 +112,9 @@ function staticFilesDev() {
 		.pipe(dest('./build'));
 }
 
-exports.dev = series(copyImagesDev, stylesDev, staticFilesDev, devServer);
+const dev = series(copyImagesDev, stylesDev, staticFilesDev, devServer);
+dev.displayName = 'dev';
+export { dev };
 
 /* -------------------------------------------------------------------------------------------------
 Production Tasks
@@ -171,11 +176,7 @@ function inlineStyles() {
 function processImages() {
 	return src('./src/assets/img/**')
 		.pipe(plumber({ errorHandler: onError }))
-		.pipe(
-			imagemin([imagemin.svgo({ plugins: [{ removeViewBox: true }] })], {
-				verbose: true,
-			})
-		)
+		.pipe(imagemin())
 		.pipe(dest('./dist/assets/img'))
 		.on('end', () => {
 			gutil.beep();
@@ -184,13 +185,16 @@ function processImages() {
 		});
 }
 
-exports.prod = series(
+const prod = series(
 	cleanProd,
 	stylesProd,
 	staticFilesProd,
 	processImages,
 	inlineStyles
 );
+prod.displayName = 'prod';
+
+export { prod };
 
 /* -------------------------------------------------------------------------------------------------
 Utility Tasks
@@ -206,7 +210,7 @@ Messages
 -------------------------------------------------------------------------------------------------- */
 const errorMsg = '\x1b[41mError\x1b[0m';
 const filesGenerated =
-	'Your production file are generated in: \x1b[1m' + __dirname + '/dist/ ✅';
+	'Your production file are generated in: \x1b[1m' + '/dist/ ✅';
 
 const fuzzyMail = '\x1b[42m\x1b[1m📨 FuzzyMail\x1b[0m';
 const fuzzyMailUrl = '\x1b[2m - https://www.fuzzymail.co/\x1b[0m';
