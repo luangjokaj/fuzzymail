@@ -8,19 +8,19 @@
  * Luan Gjokaj - https://twitter.com/luangjokaj/
  */
 
- import prompts from 'prompts';
- import chalk from 'chalk';
- import program from 'commander';
- import { createRequire } from 'module';
- import { run } from './modules/run.js';
- 
- const require = createRequire(import.meta.url);
- const packageData = require('./package.json');
- 
- const version = packageData.version;
- const currentNodeVersion = process.versions.node;
- const semver = currentNodeVersion.split('.');
- const major = semver[0];
+import prompts from 'prompts';
+import chalk from 'chalk';
+import { program } from 'commander';
+import { createRequire } from 'module';
+import { run } from './modules/run.js';
+
+const require = createRequire(import.meta.url);
+const packageData = require('./package.json');
+
+const version = packageData.version;
+const currentNodeVersion = process.versions.node;
+const semver = currentNodeVersion.split('.');
+const major = semver[0];
 
 program
 	.version(version, '-v, --vers', 'output the current version')

@@ -1,6 +1,6 @@
 {
 	"name": "fuzzymail",
-	"version": "0.0.9-5",
+	"version": "0.0.9-6",
 	"description": "Responsive email template generator.",
 	"keywords": [
 		"boilerplate",
@@ -32,11 +32,11 @@
 	"author": "Luan Gjokaj <luan@riangle.com>",
 	"license": "MIT",
 	"dependencies": {
-		"autoprefixer": "^10.3.4",
-		"browser-sync": "^2.27.5",
-		"cherry-postcss": "^0.0.2-11",
+		"autoprefixer": "^10.4.4",
+		"browser-sync": "^2.27.9",
+		"cherry-postcss": "^0.0.2-13",
 		"connect-modrewrite": "^0.10.2",
-		"cssnano": "^5.0.8",
+		"cssnano": "^5.1.5",
 		"del": "^6.0.0",
 		"gulp": "^4.0.2",
 		"gulp-file-include": "^2.3.0",
@@ -49,9 +49,9 @@
 		"gulp-postcss": "^9.0.1",
 		"gulp-sourcemaps": "^3.0.0",
 		"gulp-util": "^3.0.8",
-		"postcss": "^8.3.6",
+		"postcss": "^8.4.12",
 		"postcss-flexbugs-fixes": "^5.0.2",
-		"postcss-import": "^14.0.2",
-		"postcss-preset-env": "^6.7.0"
+		"postcss-import": "^14.1.0",
+		"postcss-preset-env": "^7.4.3"
 	}
 }
