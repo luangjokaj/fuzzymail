@@ -32,12 +32,12 @@
 	"author": "Luan Gjokaj <luan@riangle.com>",
 	"license": "MIT",
 	"dependencies": {
-		"autoprefixer": "^10.4.4",
-		"browser-sync": "^2.27.9",
-		"cherry-postcss": "^0.0.2-13",
+		"autoprefixer": "^10.4.12",
+		"browser-sync": "^2.27.10",
+		"cherry-postcss": "^0.0.2-18",
 		"connect-modrewrite": "^0.10.2",
-		"cssnano": "^5.1.5",
-		"del": "^6.0.0",
+		"cssnano": "^5.1.13",
+		"del": "^7.0.0",
 		"gulp": "^4.0.2",
 		"gulp-file-include": "^2.3.0",
 		"gulp-htmlmin": "^5.0.1",
@@ -49,9 +49,9 @@
 		"gulp-postcss": "^9.0.1",
 		"gulp-sourcemaps": "^3.0.0",
 		"gulp-util": "^3.0.8",
-		"postcss": "^8.4.12",
+		"postcss": "^8.4.16",
 		"postcss-flexbugs-fixes": "^5.0.2",
-		"postcss-import": "^14.1.0",
-		"postcss-preset-env": "^7.4.3"
+		"postcss-import": "^15.0.0",
+		"postcss-preset-env": "^7.8.2"
 	}
 }

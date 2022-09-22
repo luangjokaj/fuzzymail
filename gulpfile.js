@@ -7,7 +7,7 @@ Contributors: Luan Gjokaj
 import pkg from 'gulp';
 import browserSync from 'browser-sync';
 import cssnano from 'cssnano';
-import del from 'del';
+import { deleteAsync } from 'del';
 import fileinclude from 'gulp-file-include';
 import gutil from 'gulp-util';
 import htmlmin from 'gulp-htmlmin';
@@ -120,7 +120,7 @@ export { dev };
 Production Tasks
 -------------------------------------------------------------------------------------------------- */
 async function cleanProd() {
-	await del(['./dist']);
+	await deleteAsync(['./dist']);
 }
 
 function copyFontsProd() {
